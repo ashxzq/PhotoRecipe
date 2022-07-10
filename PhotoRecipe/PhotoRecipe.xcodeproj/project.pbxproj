@@ -19,6 +19,9 @@
 		CEEC1ABC287A64A00038BE58 /* ImageSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1ABB287A64A00038BE58 /* ImageSelectorController.swift */; };
 		CEEC1ABE287A64AE0038BE58 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1ABD287A64AE0038BE58 /* NotificationController.swift */; };
 		CEEC1AC0287A64BC0038BE58 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1ABF287A64BC0038BE58 /* ProfileController.swift */; };
+		CEEC1AC2287AABEB0038BE58 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1AC1287AABEB0038BE58 /* FeedCell.swift */; };
+		CEEC1AC4287AAD9C0038BE58 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1AC3287AAD9C0038BE58 /* Extensions.swift */; };
+		CEEC1AC7287AAF410038BE58 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC1AC6287AAF410038BE58 /* Algorithms */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,8 @@
 		CEEC1ABB287A64A00038BE58 /* ImageSelectorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorController.swift; sourceTree = "<group>"; };
 		CEEC1ABD287A64AE0038BE58 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		CEEC1ABF287A64BC0038BE58 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		CEEC1AC1287AABEB0038BE58 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		CEEC1AC3287AAD9C0038BE58 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../Downloads/Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC1AC7287AAF410038BE58 /* Algorithms in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +94,7 @@
 		CEEC1AAF287A63F40038BE58 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC1AC3287AAD9C0038BE58 /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -122,6 +129,7 @@
 		CEEC1AB3287A64150038BE58 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CEEC1AC1287AABEB0038BE58 /* FeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -149,6 +157,9 @@
 			dependencies = (
 			);
 			name = PhotoRecipe;
+			packageProductDependencies = (
+				CEEC1AC6287AAF410038BE58 /* Algorithms */,
+			);
 			productName = PhotoRecipe;
 			productReference = CEEC1A98287A607F0038BE58 /* PhotoRecipe.app */;
 			productType = "com.apple.product-type.application";
@@ -177,6 +188,9 @@
 				Base,
 			);
 			mainGroup = CEEC1A8F287A607F0038BE58;
+			packageReferences = (
+				CEEC1AC5287AAF410038BE58 /* XCRemoteSwiftPackageReference "swift-algorithms" */,
+			);
 			productRefGroup = CEEC1A99287A607F0038BE58 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -205,6 +219,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CEEC1AA0287A607F0038BE58 /* ViewController.swift in Sources */,
+				CEEC1AC2287AABEB0038BE58 /* FeedCell.swift in Sources */,
 				CEEC1ABC287A64A00038BE58 /* ImageSelectorController.swift in Sources */,
 				CEEC1ABE287A64AE0038BE58 /* NotificationController.swift in Sources */,
 				CEEC1ABA287A64920038BE58 /* SearchController.swift in Sources */,
@@ -212,6 +227,7 @@
 				CEEC1AC0287A64BC0038BE58 /* ProfileController.swift in Sources */,
 				CEEC1AB8287A64880038BE58 /* FeedController.swift in Sources */,
 				CEEC1AB6287A64350038BE58 /* MainTabController.swift in Sources */,
+				CEEC1AC4287AAD9C0038BE58 /* Extensions.swift in Sources */,
 				CEEC1A9E287A607F0038BE58 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,6 +444,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CEEC1AC5287AAF410038BE58 /* XCRemoteSwiftPackageReference "swift-algorithms" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-algorithms.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CEEC1AC6287AAF410038BE58 /* Algorithms */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CEEC1AC5287AAF410038BE58 /* XCRemoteSwiftPackageReference "swift-algorithms" */;
+			productName = Algorithms;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CEEC1A90287A607F0038BE58 /* Project object */;
 }
