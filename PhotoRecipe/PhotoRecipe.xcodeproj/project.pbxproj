@@ -24,6 +24,7 @@
 		CEEC1AC7287AAF410038BE58 /* Algorithms in Frameworks */ = {isa = PBXBuildFile; productRef = CEEC1AC6287AAF410038BE58 /* Algorithms */; };
 		CEEC1ACA287ABBFB0038BE58 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1AC9287ABBFB0038BE58 /* LoginController.swift */; };
 		CEEC1ACC287ABC220038BE58 /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1ACB287ABC220038BE58 /* RegistrationController.swift */; };
+		CEEC1ACE287C0AF20038BE58 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEEC1ACD287C0AF20038BE58 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		CEEC1AC3287AAD9C0038BE58 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = ../../../../../Downloads/Extensions.swift; sourceTree = "<group>"; };
 		CEEC1AC9287ABBFB0038BE58 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CEEC1ACB287ABC220038BE58 /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		CEEC1ACD287C0AF20038BE58 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				CEEC1AC1287AABEB0038BE58 /* FeedCell.swift */,
+				CEEC1ACD287C0AF20038BE58 /* CustomTextField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEEC1ACE287C0AF20038BE58 /* CustomTextField.swift in Sources */,
 				CEEC1AA0287A607F0038BE58 /* ViewController.swift in Sources */,
 				CEEC1ACA287ABBFB0038BE58 /* LoginController.swift in Sources */,
 				CEEC1AC2287AABEB0038BE58 /* FeedCell.swift in Sources */,
